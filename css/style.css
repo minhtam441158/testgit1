@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#box-wrapper {
+    width: 980px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* left */
+
+.column-left {
+    width: 25%;
+    float: left;
+    max-width: 100%;
+}
+
+.column-left .sidebar {
+    margin-top: 20px;
+}
+
+.column-left .category h4 {
+    color: #FFF;
+    font-size: 18px;
+    padding: 10px;
+    background: radial-gradient( #1828bd, #090979);
+    border-radius: 20px 0px 0px;
+}
+
+.column-left .category-list {
+    border: 1px solid #1828bd;
+}
+
+.column-left .category-nav {
+    padding: 15px 30px 7px 30px;
+}
+
+.column-left .category-nav li {
+    padding: 7px;
+    margin: 5px 0px;
+    position: relative;
+}
+
+.column-left .category-nav li:after {
+    content: '\f35a';
+    font-family: 'FontAwesome';
+    transform: translateY(-100%);
+    left: -20px;
+    position: absolute;
+}
+
+.column-left .category-nav li:nth-child(1) {
+    background-color: #0d8a32;
+}
+
+.column-left .category-nav li:nth-child(2) {
+    background-color: #0bc423;
+}
+
+.column-left .category-nav li:nth-child(3) {
+    background-color: #1442d6;
+}
+
+.column-left .category-nav li:nth-child(4) {
+    background-color: #b90cc9;
+}
+
+.column-left .category-nav li:nth-child(5) {
+    background-color: #c90d1c;
+}
+
+.column-left .category-nav li a {
+    color: #FFF;
+    text-align: center;
+    display: block;
+}
+
+.column-left .phone-info {
+    display: flex;
+    margin-top: 15px;
+}
+
+.column-left .number-phone {
+    background-color: #b5eaf1;
+}
+
+.column-left .phone-info .icon-phone,
+.column-left .phone-info .number-phone,
+.column-left .working-time {
+    border: 1px solid #1828bd;
+}
+
+.column-left .phone-info .icon-phone {
+    margin-right: 6px;
+}
+
+.column-left .phone-info .icon-phone i {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #b5eaf1;
+}
+
+.column-left .phone-info .number-phone {
+    flex: 1;
+}
+
+.column-left .phone-info .number-phone p {
+    color: #1828bd;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.column-left .working-time {
+    background-color: #b5eaf1;
+    padding: 5px 0px;
+    margin-top: 5px;
+}
+
+.column-left .working-time p.working-info {
+    color: #1828bd;
+    text-align: center;
+}
+
+.column-left .bank {
+    background-color: #b5eaf1;
+    border: 1px solid #1828bd;
+    padding: 20px 10px 20px 7px;
+    margin-top: 5px;
+}
+
+.column-left .bank p,
+.column-left .bank .bank-title {
+    color: #1828bd;
+}
+
+.column-left .bank .bank-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.column-left .bank p:nth-of-type(1),
+.column-left .bank p:nth-of-type(3) {
+    text-transform: uppercase;
+}
+
+
+/* right */
+
+.column-right {
+    margin-top: 30px;
+    width: 75%;
+    float: right;
+    padding-left: 30px;
+}
+
+.column-right .content-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-right .content-images .column-6 {
+    flex-basis: 48%;
+    max-width: 100%;
+}
+
+.column-right .content-images .column-6 img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+}
+
+.column-right .product {
+    display: flex;
+}
+
+.column-right .product .column-3 {
+    flex-basis: 25%;
+    padding: 20px 10px;
+}
+
+.column-right .product .column-3 img {
+    width: 100%;
+    max-width: 100%;
+    height: 130px;
+}
+
+.column-right .product .product-info {
+    background-color: #f1eeeee8;
+    min-height: 200px;
+}
+
+.column-right .product .product-info_title {
+    background-color: #b5eaf1;
+    border: 1px solid #1828bd;
+    text-align: center;
+    color: #1828bd;
+    font-size: 18px;
+    padding: 7px;
+    margin-top: 7px;
+}
+
+.column-right .product-info_small {
+    padding: 7px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #box-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .column-left {
+        width: 100%;
+        display: block;
+    }
+    .column-right {
+        display: block;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .column-right .content-images .column-6 img {
+        height: 100%;
+    }
+    .column-right .product {
+        flex-direction: column;
+    }
+    .column-right .product .column-3 img {
+        height: 100%;
+    }
+}
